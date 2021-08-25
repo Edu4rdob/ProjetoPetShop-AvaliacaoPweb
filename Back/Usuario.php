@@ -1,22 +1,17 @@
 <?php
-	session_start();
-	require_once 'Controller.php';
 
-	class Cliente{
+	class Usuario{
 		private $nome;
 		private $usu;
 		private $email;
-		private $cpf;
-		private $telefone;
 		private $senha;
 		
-		function __construct($nome, $usuario, $email,$cpf,$telefone, $senha){
+		function __construct($nome, $usuario, $email, $senha){
 			$this->nome = $nome;
 			$this->usu = $usuario;
 			$this->email = $email;
-			$this->cpf = $cpf;
-			$this->telefone = $telefone;
 			$this->senha = $senha;
+			
 		}
 		
 		public function getNome(){
@@ -28,9 +23,6 @@
 		public function getEmail(){
 			return $this->email;
 		}
-		public function getCpf(){
-			return $this->cpf;
-		}
 		public function getSenha(){
 			return $this->senha;
 		}
@@ -40,28 +32,11 @@
 		public function setEmail($valor){
 			$this->email = $valor;
 		}
-		public function setCpf($cpf){
-			$this->cpf = $valor;
-		}
 		public function setSenha($valor){
 			$this->senha = $valor;
 		}
 		public function setNome($valor){
 			$this->name = $valor;
-		}
-		public function getTelefone(){
-			return $this->telefone;
-		}
-		public function setTelefone($valor){
-			$this->telefone = $valor;
-		}
-		
-		public function adicionar(){
-			$controler = new Controller();
-		}
-		
-		public function remover(){
-			
 		}
 	}
 	

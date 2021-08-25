@@ -2,13 +2,14 @@
 	//require_once 'Controller.php';
 	require_once 'Cliente.php';
 	
-	Class Conexao(){
-		$username = "root";
-		$password = "";
+	Class Conexao{
 		
-		Conexao(Cliente cliente){
+		public function __construct(Cliente $pessoa){
+			$usunome = "root";
+			$password = "";
+			$cliente = $pessoa;
 			try {
-				$conn = new PDO('mysql:host=localhost;dbname=clinica', $username, $password);
+				$conn = new PDO('mysql:host=localhost;dbname=clinica', $usunome, $password);
 				$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 				$nome = $cliente->getNome();
@@ -25,7 +26,7 @@
 				$stmt->bindParam(5,$telefone, PDO::PARAM_INT);
 				$stmt->bindParam(6,$senha, PDO::PARAM_INT);
 				$stmt->execute();
-				echo "foi";
+				//echo "foi";
 				//$usus = $conn->prepare('SELECT nome, usuario, email FROM USUARIOS');
 				//$usus->execute();
 				/*$c=0;
