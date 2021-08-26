@@ -63,7 +63,7 @@ session_start();
         </div>
         <div class="col-md-8 order-md-1 mb-3">
           <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate action="mediador.php" method="POST">
+          <form class="needs-validation" novalidate action="../../Back/mediador.php" method="POST">
             <div class="row">
               <div class="col-md-6 fullName">
                 <label for="firstName">Full name</label>
@@ -97,7 +97,7 @@ session_start();
 
             <div class="mb-3">
               <label for="address">CPF</label>
-              <input type="text" class="form-control" nome id="address" placeholder="XXX.XXX.XXX-XX" required>
+              <input type="text" class="form-control" name='cpf' id="address" placeholder="XXX.XXX.XXX-XX" required>
               <div class="invalid-feedback">
                 Please enter your shipping CPF.
               </div>
@@ -153,22 +153,22 @@ session_start();
             <div class="collapse" id="collapseExample">
               <div class="card card-body">
                 <label for="codigo"></label>
-                <input type="text" name="codigo" id="codigoBanco" placeholder="#Digite o código de veterinário" required>
+                <input type="text" name="codigo" id="codigoBanco" placeholder="#Digite o código de veterinário">
               </div>
               <div class="card card-body">
                 <label for="id"></label>
-                <input type="text" name="id" id="id" placeholder="#ID" required>
+                <input type="text" name="id" id="id" placeholder="#ID">
               </div>
             </div>
             <hr class="mb-4">
             <a href="../cover/home.css">
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Registre-se</button>
+              <input class="btn btn-primary btn-lg btn-block" type="submit" value='Registre-se'>
             </a>
           </form>
         </div>
       </div>
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2020-2021 Company Name</p>
+        <p class="mb-1">&copy; 2021 IFAL</p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Privacy</a></li>
           <li class="list-inline-item"><a href="#">Terms</a></li>

@@ -14,6 +14,7 @@
 	$_SESSION["email"] = $email;
 	$_SESSION["id"] = $id;
 	$_SESSION["endereco"] = $endereco;
+	$_SESSION["codigo"] = $cod;
 	echo "Informações armazenadas";
 	require_once 'Cliente.php';
 	require_once 'Veterinario.php';
@@ -40,7 +41,7 @@
 			}else{										
 				$senhaCrip = md5($_REQUEST["senha"]);
 				$veterinario = New Veterinario( $_REQUEST["nome"],$_REQUEST["usuario"], $_REQUEST["email"],
-				$_REQUEST["cpf"],$_REQUEST["telefone"], $_REQUEST["id"],$_REQUEST["endereco"]=='', $senhaCrip);
+				$_REQUEST["cpf"],$_REQUEST["telefone"], $_REQUEST["id"],$_REQUEST["endereco"]=='', $_REQUEST["codigo"]=='', $senhaCrip);
 				$conexao = new Conexao($veterinario);
 				$conexao->adicionarVeterinario();
 			}

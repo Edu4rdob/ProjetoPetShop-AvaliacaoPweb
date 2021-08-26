@@ -68,7 +68,7 @@
 			$usunome = "root";
 			$password = "";
 			$animal = $pet;
-			$cliente = $pessoa
+			$cliente = $pessoa;
 			try {
 				$conn = new PDO('mysql:host=localhost;dbname=clinica', $usunome, $password);
 				$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -96,7 +96,7 @@
 			$usunome = "root";
 			$password = "";
 			$animal = $pet;
-			$cliente = $pessoa
+			$cliente = $pessoa;
 			try {
 				$conn = new PDO('mysql:host=localhost;dbname=clinica', $usunome, $password);
 				$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
