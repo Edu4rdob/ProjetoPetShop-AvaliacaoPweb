@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -58,22 +61,15 @@
             </button>
           </div>
         </div>
-        <div class="col-md-8 order-md-1">
+        <div class="col-md-8 order-md-1 mb-3">
           <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate>
+          <form class="needs-validation" novalidate action="mediador.php" method="POST">
             <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
+              <div class="col-md-6 fullName">
+                <label for="firstName">Full name</label>
+                <input type="text" class="form-control" placeholder="Name" name="nome" value="" required>
+                <div class="invalid-feedback" style="width: 100%;">
                   Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
                 </div>
               </div>
             </div>
@@ -84,7 +80,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">@</span>
                 </div>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <input type="text" class="form-control" id="username" name="usuario" placeholder="Username" required>
                 <div class="invalid-feedback" style="width: 100%;">
                   Your username is required.
                 </div>
@@ -92,8 +88,8 @@
             </div>
 
             <div class="mb-3">
-              <label for="email">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <label for="email">Email <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
@@ -101,7 +97,7 @@
 
             <div class="mb-3">
               <label for="address">CPF</label>
-              <input type="text" class="form-control" id="address" placeholder="XXX.XXX.XXX-XX" required>
+              <input type="text" class="form-control" nome id="address" placeholder="XXX.XXX.XXX-XX" required>
               <div class="invalid-feedback">
                 Please enter your shipping CPF.
               </div>
@@ -109,7 +105,12 @@
 
             <div class="mb-3">
               <label for="address2">Address</label>
-              <input type="text" class="form-control" id="address2" placeholder="Rua, Bairro e Nº">
+              <input type="text" class="form-control" id="address2" name="endereco" placeholder="Rua, Bairro e Nº" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="telefone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="telefone" placeholder="(xx) x.xxxx-xxxx" required>
             </div>
 
             <div class="row">
@@ -152,7 +153,11 @@
             <div class="collapse" id="collapseExample">
               <div class="card card-body">
                 <label for="codigo"></label>
-                <input type="text" name="codigo" id="codigoBanco" placeholder="#Digite o código de veterinário">
+                <input type="text" name="codigo" id="codigoBanco" placeholder="#Digite o código de veterinário" required>
+              </div>
+              <div class="card card-body">
+                <label for="id"></label>
+                <input type="text" name="id" id="id" placeholder="#ID" required>
               </div>
             </div>
             <hr class="mb-4">

@@ -4,27 +4,48 @@
 	$telefone = $_REQUEST["telefone"];
 	$cpf = $_REQUEST["cpf"];
 	$email = $_REQUEST["email"];
+	$id = $_REQUEST["id"];
+	$cod = $_REQUEST["codigo"];
+	$endereco= $_REQUEST["endereco"];
 	$_SESSION["nome"] = $nome;
 	$_SESSION["usuario"] = $usuario;
 	$_SESSION["telefone"] = $telefone;
 	$_SESSION["cpf"] = $cpf;
 	$_SESSION["email"] = $email;
+	$_SESSION["id"] = $id;
+	$_SESSION["endereco"] = $endereco;
 	echo "Informações armazenadas";
 	require_once 'Cliente.php';
+	require_once 'Veterinario.php';
 	require_once 'Conexao.php';
 	
 	Class Controller {
 	
-		public function __construct(){
+		public function adicionarCliente(){
 			if($_REQUEST["nome"]=='' or $_REQUEST["usuario"]== '' or $_REQUEST["email"]== '' 
-			or $_REQUEST["senha"]=='' or $_REQUEST["cpf"]=='' or $_REQUEST["telefone"]==''){
+			or $_REQUEST["senha"]=='' or $_REQUEST["cpf"]=='' or $_REQUEST["telefone"]=='' or $_REQUEST["endereco"]==''){
 				echo "Por favor complete todos os campos";
 			}else{										
 				$senhaCrip = md5($_REQUEST["senha"]);
 				$cliente = New Cliente( $_REQUEST["nome"],$_REQUEST["usuario"], $_REQUEST["email"],
-				$_REQUEST["cpf"],$_REQUEST["telefone"], $senhaCrip);
+				$_REQUEST["cpf"],$_REQUEST["telefone"],$_REQUEST["endereco"], $senhaCrip);
 				$conexao = new Conexao($cliente);
+				$conexao->adicionarCliente();
 			}
+		}
+		public function adicionarVeterinario(){
+			if($_REQUEST["nome"]=='' or $_REQUEST["usuario"]== '' or $_REQUEST["email"]== '' 
+			or $_REQUEST["senha"]=='' or $_REQUEST["cpf"]=='' or $_REQUEST["telefone"]=='' or $_REQUEST["id"]=='' or $_REQUEST["endereco"]=='' or $_REQUEST["codigo"]){
+				echo "Por favor complete todos os campos";
+			}else{										
+				$senhaCrip = md5($_REQUEST["senha"]);
+				$veterinario = New Veterinario( $_REQUEST["nome"],$_REQUEST["usuario"], $_REQUEST["email"],
+				$_REQUEST["cpf"],$_REQUEST["telefone"], $_REQUEST["id"],$_REQUEST["endereco"]=='', $senhaCrip);
+				$conexao = new Conexao($veterinario);
+				$conexao->adicionarVeterinario();
+			}
+		}
+		public function adicionarPet(){
 			
 		}
 		

@@ -9,13 +9,15 @@
 		private $cpf;
 		private $telefone;
 		private $senha;
+		private $endereco;
 		
-		function __construct($nome, $usuario, $email,$cpf,$telefone, $senha){
+		function __construct($nome, $usuario, $email,$cpf,$telefone,$endereco, $senha){
 			$this->nome = $nome;
 			$this->usu = $usuario;
 			$this->email = $email;
 			$this->cpf = $cpf;
 			$this->telefone = $telefone;
+			$this->endereco = $endereco;
 			$this->senha = $senha;
 		}
 		
@@ -33,6 +35,9 @@
 		}
 		public function getSenha(){
 			return $this->senha;
+		}
+		public function getEndereco(){
+			return $this->endereco;
 		}
 		public function setUsuario($valor){
 			$this->usuario = $valor;
@@ -55,13 +60,13 @@
 		public function setTelefone($valor){
 			$this->telefone = $valor;
 		}
+		public function setEndereco($valor){
+			$this->endereco = $valor;
+		}
 		
 		public function adicionar(){
 			$controler = new Controller();
-		}
-		
-		public function remover(){
-			
+			$controler->adicionarCliente();
 		}
 	}
 	

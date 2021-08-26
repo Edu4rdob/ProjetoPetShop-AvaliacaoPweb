@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -56,7 +57,7 @@
                 </div>
                 <div class="modal-footer vstack gap-2 col-md-5 mx-auto">
                   <button type="button" class="btn btn-danger buttonHover" >Sign in</button>
-                  <a href="../checkout/form.html">
+                  <a href="../checkout/form.php">
                   <button type="button" class="btn btn-outline-dark">Sign up</button></a>
                 </div>
               </form>
