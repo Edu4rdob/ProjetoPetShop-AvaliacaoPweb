@@ -23,7 +23,7 @@ session_start();
 
     <div class="container">
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/Front/checkout/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
+        <img class="d-block mx-auto mb-4" src="imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
         <h2>Registre-se como veterinario</h2>
       </div>
         <div class="col-md-8 order-md-1 mb-3">

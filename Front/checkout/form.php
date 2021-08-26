@@ -23,7 +23,7 @@ session_start();
 
     <div class="container">
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/Front/checkout/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
+        <img class="d-block mx-auto mb-4" src="imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
         <h2>Registre-se</h2>
         <p class="lead">Aqui temos os melhores veterinarios e tratamento que o seu pet poderá encontrar.</p>
       </div>
@@ -42,13 +42,13 @@ session_start();
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/Front/checkout/imagens/1b82a5_503c2f4782ee416b8d65b75b3b9bea42_mv2.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
+                <img src="imagens/1b82a5_503c2f4782ee416b8d65b75b3b9bea42_mv2.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="imagens/caoideal2-1.png"  style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/Front/checkout/imagens/gato-gato-fofo-gato-filhote-1585841507191_v2_450x337.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
+                <img src="imagens/gato-gato-fofo-gato-filhote-1585841507191_v2_450x337.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -148,25 +148,6 @@ session_start();
                 <div class="invalid-feedback">
                   Please provide a valid state.
                 </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <div class="custom-control custom-checkbox">
-              <input type="radio" class="custom-control-input" name="tipo" id="save-info" checked>
-              <label class="custom-control-label" for="save-info">Cliente</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="radio" class="custom-control-input" name="tipo" id="same-address"  data-bs-toggle="collapse" href="#collapseExample" role="radio" aria-expanded="false" aria-controls="collapseExample"> 
-              <label class="custom-control-label" for="same-address">Veterinário</label>
-            </div>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body">
-                <label for="codigo"></label>
-                <input type="text" name="codigo" id="codigoBanco" placeholder="#Digite o código de veterinário">
-              </div>
-              <div class="card card-body">
-                <label for="id"></label>
-                <input type="text" name="id" id="id" placeholder="#ID">
               </div>
             </div>
             <hr class="mb-4">

@@ -47,18 +47,21 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <img src="/Front/cover/images/ico-petshop-e9940-thumbnail.png" style="width:180px" alt="" srcset="">
-              <form style="color: black;">
+              <img src="images/ico-petshop-e9940-thumbnail.png" style="width:180px" alt="" srcset="">
+              <form style="color: black;" action="../../Back/mediador.php" method="POST">
                 <div class="mb-3">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Email address" style="margin-top: 30px; background-color: gainsboro; border-radius: 20px;">
+                  <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Email address" style="margin-top: 30px; background-color: gainsboro; border-radius: 20px;">
                 </div>
                 <div class="mb-3">
-                  <input type="password" class="form-control" id="exampleInputPassword1" style="border-radius: 20px; background-color: gainsboro;" placeholder="Password">
+                  <input type="password" class="form-control" name="senha"id="exampleInputPassword1" style="border-radius: 20px; background-color: gainsboro;" placeholder="Password">
                 </div>
                 <div class="modal-footer vstack gap-2 col-md-5 mx-auto">
-                  <button type="button" class="btn btn-danger buttonHover" >Sign in</button>
+                  <button type="button" class="btn btn-danger buttonHover">Sign in</button>
+                  <p style="color: black;">Sign in</p>
                   <a href="../checkout/form.php">
-                  <button type="button" class="btn btn-outline-dark">Sign up</button></a>
+                  <button type="button" class="btn btn-outline-dark">cliente</button></a>
+                  <a href="../checkout/form2.php">
+                  <button type="button" class="btn btn-outline-dark">veterinario</button></a>
                 </div>
               </form>
             </div>
