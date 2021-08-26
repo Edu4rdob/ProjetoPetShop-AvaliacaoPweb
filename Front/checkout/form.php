@@ -88,6 +88,15 @@ session_start();
             </div>
 
             <div class="mb-3">
+              <label for="senha">Password</label>
+              <input type="password" class="form-control" name='senha' id="senha" placeholder="********" required>
+              <div class="invalid-feedback">
+                Please enter your shipping CPF.
+              </div>
+            </div>
+
+
+            <div class="mb-3">
               <label for="email">Email <span class="text-muted"></span></label>
               <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
               <div class="invalid-feedback">
