@@ -8,9 +8,10 @@
 		private $telefone;
 		private $senha;
 		private $id;
+		private $codigo;
 		private $endereco;
 		
-		function __construct($nome, $usuario, $email,$cpf,$telefone,$id,$endereco, $senha){
+		function __construct($nome, $usuario, $email,$cpf,$telefone,$id,$endereco, $codigo,$senha){
 			$this->nome = $nome;
 			$this->usu = $usuario;
 			$this->email = $email;
@@ -18,6 +19,7 @@
 			$this->telefone = $telefone;
 			$this->id = $id;
 			$this->senha = $senha;
+			$this->codigo=$codigo;
 			$this->endereco= $endereco;
 		}
 		
@@ -36,8 +38,20 @@
 		public function getEndereco(){
 			return $this->endereco;
 		}
+		public function getCpf(){
+			return $this->cpf;
+		}
 		public function getSenha(){
 			return $this->senha;
+		}
+		public function getCodigo(){
+			return $this->codigo;
+		}
+		public function getTelefone(){
+			return $this->telefone;
+		}
+		public function setCodigo($valor){
+			$this->codigo = $valor;
 		}
 		public function setUsuario($valor){
 			$this->usuario = $valor;

@@ -19,7 +19,7 @@
 				$email = $cliente->getEmail();
 				$cpf = $cliente->getCpf();
 				$telefone = $cliente->getTelefone();
-				$endereco = $cliente->getEndereco;
+				$endereco = $cliente->getEndereco();
 				$senha = $cliente->getSenha();
 				$stmt = $conn->prepare('INSERT INTO CLIENTE VALUES(?,?,?,?,?,?,?)');
 				$stmt->bindParam(1,$nome, PDO::PARAM_INT);
@@ -49,16 +49,18 @@
 				$telefone = $vet->getTelefone();
 				$id = $vet->getId();
 				$endereco = $vet->getEndereco();
+				$codigo = '50';
 				$senha = $vet->getSenha();
-				$stmt = $conn->prepare('INSERT INTO CLIENTE VALUES(?,?,?,?,?,?,?,?)');
+				$stmt = $conn->prepare('INSERT INTO VETERINARIO VALUES(?,?,?,?,?,?,?,?,?)');
 				$stmt->bindParam(1,$nome, PDO::PARAM_INT);
 				$stmt->bindParam(2,$usu, PDO::PARAM_INT);
 				$stmt->bindParam(3,$email, PDO::PARAM_INT);
 				$stmt->bindParam(4,$cpf, PDO::PARAM_INT);
 				$stmt->bindParam(5,$telefone, PDO::PARAM_INT);
 				$stmt->bindParam(6,$id, PDO::PARAM_INT);
-				$stmt->bindParam(7,$endereco, PDO::PARAM_INT);
-				$stmt->bindParam(8,$senha, PDO::PARAM_INT);
+				$stmt->bindParam(7,$codigo, PDO::PARAM_INT);
+				$stmt->bindParam(8,$endereco, PDO::PARAM_INT);
+				$stmt->bindParam(9,$senha, PDO::PARAM_INT);
 				$stmt->execute();
 			} catch(PDOException $e) {
 				echo 'ERROR: ' . $e->getMessage();
