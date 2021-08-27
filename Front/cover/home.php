@@ -33,7 +33,7 @@
 
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Quem somos</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">Somos uma clínica veterinaria destinada para cuidar diretamente com seu pet. Aqui temos o melhor tratamento que seu bichinho pode ter e muito mais! Faça seu login e venha conhecer o que essa empresa oferece.</p>
         <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
@@ -55,13 +55,22 @@
                 <div class="mb-3">
                   <input type="password" class="form-control" name="senha"id="exampleInputPassword1" style="border-radius: 20px; background-color: gainsboro;" placeholder="Password">
                 </div>
-                <div class="modal-footer vstack gap-2 col-md-5 mx-auto">
-                  <button type="button" class="btn btn-danger buttonHover">Sign in</button>
-                  <p style="color: black;">Sign in</p>
-                  <a href="../checkout/form.php">
-                  <button type="button" class="btn btn-outline-dark">cliente</button></a>
-                  <a href="../checkout/form2.php">
-                  <button type="button" class="btn btn-outline-dark">veterinario</button></a>
+                <div class="modal-footer vstack col-md-5 mx-auto classeMude">
+                  <div>
+                    <button type="button" class="btn btn-danger buttonHover">Sign in</button>
+                  </div>
+                  <p style="color: black;">Sign in with</p>
+                  <div class='botoesSignUp'>
+                    <div>
+                      <a href="../checkout/form.php">
+                      <button type="button" class="btn btn-outline-dark buttonSignUp">cliente</button></a>
+                      <a href="../checkout/form2.php">
+                      <button type="button" class="btn btn-outline-dark buttonSignUp">veterinario</button></a>
+                    </div>
+                    <div>
+          
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
@@ -71,7 +80,7 @@
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          
         </div>
       </footer>
     </div>

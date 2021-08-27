@@ -140,3 +140,16 @@ body::after{
 .modal-footer{
   align-content: space-between;
 }
+
+.botoesSignUp{
+  display: flex;
+}
+.buttonSignUp{
+  width: 100px;
+  display: inline-block;
+}
+.classeMude{
+  align-content: center;
+  width:60%;
+  height: auto;
+}
