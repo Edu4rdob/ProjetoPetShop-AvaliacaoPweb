@@ -1,7 +1,8 @@
 
 <?php
+	session_start();
 	require_once 'mostrarVet.php';
-	$mostrar = new mostrarVet();
+	$mostrar = new mostrarVet($_SESSION["email"]);
 
 ?>
 <!DOCTYPE html>

@@ -18,7 +18,8 @@
 					
 					foreach($result as $value){
 						if($value['email'] == $email){
-							echo $value['nome'],'<br>',$value['usuario'],'<br>',$value['email'];
+							echo '<h6>Nome: ', $value['nome'],'</h6><br>','<h6>User: ',$value['usuario'],'</h6><br>',
+							'<h6>Email: ',$value['email'],'</h6>';
 						}
 					}
 

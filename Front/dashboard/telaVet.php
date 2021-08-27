@@ -2,7 +2,7 @@
 <?php
 	session_start();
 	require_once '../../Back/mostrarVet.php';
-	$mostrar = new mostrarVet($_SESSION["email"]);
+	
 
 ?>
 <!doctype html>
@@ -107,7 +107,10 @@
             </div>
             
           </div>
-          <h4>Dados pessoais:</h4>
+          <h4>Dados pessoais:</h4> 
+			<?php
+				$mostrar = new mostrarVet($_SESSION["email"]);
+			?>
           <hr> </hr>
           <div class="table-responsive">
             <h4>Animais Cadastrados</h4>

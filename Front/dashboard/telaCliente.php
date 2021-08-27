@@ -1,6 +1,7 @@
 <?php
-	require_once '../../Back/MostrarCliente.php';
-	$mostrar = new MostraCliente();
+	session_start();
+	require_once '../../Back/MostraCliente.php';
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -105,6 +106,9 @@
             
           </div>
           <h4>Dados pessoais:</h4>
+		  <?php
+				$mostrar = new MostraCliente($_SESSION["email"]);
+			?>
           <hr> </hr>
           <div class="table-responsive">
             <h4>Animais Cadastrados</h4>
