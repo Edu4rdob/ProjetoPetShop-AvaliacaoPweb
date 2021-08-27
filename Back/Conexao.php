@@ -1,5 +1,4 @@
 <?php
-	//require_once 'Controller.php';
 	require_once 'Cliente.php';
 	require_once 'Veterinario.php';
 	require_once 'Pet.php';
@@ -118,8 +117,16 @@
 				echo 'ERROR: ' . $e->getMessage();
 			}
 		}
-		}
 		
+		
+		/*function logout(){
+        $_SESSION["conectado"]='0'; 
+        $_SESSION["nome"]='';
+		}*/
+		
+		
+		
+	}
 		
 	
 	

@@ -1,7 +1,6 @@
 <?php
 		//$senha = $_REQUEST["senha"];
 		
-
     Class ControllerLogin {
 		
         public function __construct(){
@@ -27,15 +26,20 @@
 					$result2 = $stmt->fetchAll();
 					
 					foreach($result as $value){
-						if($value['email'] == $email){
-							header("Location: index.html");
-							echo 'cliente';
+						if($value['email'] == $email && $value['senha'] ==$senhaCrip){
+							header("Location: ../Front/dashboard/telaCliente.php");
+							//require_once '../Front/dashboard/telaCliente.php';
+						}else{
+							echo 'Digite as informações corretas';
 						}
 					}
 					foreach($result2 as $value2){
-						if($value2['email'] == $email){
-							header("Location: index.html");
-							echo'veterinario';
+						if($value2['email'] == $email && $value['senha'] ==$senhaCrip){
+							$email = $_REQUEST["email"];
+							$_SESSION["email"] = $email;
+							header("Location: ../Front/dashboard/telaVet.php");
+						}else{
+							echo 'Digite as informações corretas';
 						}
 					}
 				}catch(PDOException $e) {

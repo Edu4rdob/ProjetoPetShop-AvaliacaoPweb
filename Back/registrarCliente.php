@@ -5,6 +5,5 @@
 	require_once 'Cliente.php';
 	$controller = new Controller();
 	$controller->adicionarCliente();
-	
 
 ?>

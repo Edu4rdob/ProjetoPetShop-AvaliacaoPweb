@@ -1,4 +1,7 @@
-
+<?php
+	session_start();
+	
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -48,7 +51,7 @@
             </div>
             <div class="modal-body">
               <img src="images/ico-petshop-e9940-thumbnail.png" style="width:180px" alt="" srcset="">
-              <form style="color: black;" action="../../Back/mediador.php" method="POST">
+              <form style="color: black;" action="../../Back/teste.php" method="POST">
                 <div class="mb-3">
                   <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Email address" style="margin-top: 30px; background-color: gainsboro; border-radius: 20px;">
                 </div>
@@ -57,7 +60,7 @@
                 </div>
                 <div class="modal-footer vstack col-md-5 mx-auto classeMude">
                   <div>
-                    <button type="button" class="btn btn-danger buttonHover">Sign in</button>
+                    <input type="submit" class="btn btn-danger buttonHover" value='Sign in'>
                   </div>
                   <p style="color: black;">Sign in with</p>
                   <div class='botoesSignUp'>

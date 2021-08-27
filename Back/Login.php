@@ -1,10 +1,10 @@
 
 <?php
-	session_start();
-	//echo "Informações armazenadas";
+	include 'teste.php';
+	$email = $_REQUEST["email"];
+	$_SESSION["email"] = $email;
+	echo $email;
 	require_once 'ControllerLogin.php';
-	//require_once 'Conexao.php';
 	$controller = new ControllerLogin();
-	
 
 ?>

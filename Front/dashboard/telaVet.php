@@ -1,3 +1,10 @@
+
+<?php
+	session_start();
+	require_once '../../Back/mostrarVet.php';
+	$mostrar = new mostrarVet($_SESSION["email"]);
+
+?>
 <!doctype html>
 <html lang="en">
   <head>

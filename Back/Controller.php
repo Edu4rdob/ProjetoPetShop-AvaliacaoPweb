@@ -1,21 +1,5 @@
 <?php
-	$nome = $_REQUEST["nome"];
-	$usuario = $_REQUEST["usuario"];
-	$telefone = $_REQUEST["telefone"];
-	$cpf = $_REQUEST["cpf"];
-	$email = $_REQUEST["email"];
-	$id = $_REQUEST["id"];
-	$cod = $_REQUEST["codigo"];
-	$endereco= $_REQUEST["endereco"];
-	$_SESSION["nome"] = $nome;
-	$_SESSION["usuario"] = $usuario;
-	$_SESSION["telefone"] = $telefone;
-	$_SESSION["cpf"] = $cpf;
-	$_SESSION["email"] = $email;
-	$_SESSION["id"] = $id;
-	$_SESSION["endereco"] = $endereco;
-	$_SESSION["codigo"] = $cod;
-	//echo "Informações armazenadas na seção";
+	
 	require_once 'Cliente.php';
 	require_once 'Veterinario.php';
 	require_once 'Conexao.php';
@@ -23,6 +7,18 @@
 	Class Controller {
 	
 		public function adicionarCliente(){
+			$nome = $_REQUEST["nome"];
+			$usuario = $_REQUEST["usuario"];
+			$telefone = $_REQUEST["telefone"];
+			$cpf = $_REQUEST["cpf"];
+			$email = $_REQUEST["email"];
+			$endereco= $_REQUEST["endereco"];
+			$_SESSION["nome"] = $nome;
+			$_SESSION["usuario"] = $usuario;
+			$_SESSION["telefone"] = $telefone;
+			$_SESSION["cpf"] = $cpf;
+			$_SESSION["email"] = $email;
+			$_SESSION["endereco"] = $endereco;
 			if($_REQUEST["nome"]=='' or $_REQUEST["usuario"]== '' or $_REQUEST["email"]== '' 
 			or $_REQUEST["senha"]=='' or $_REQUEST["cpf"]=='' or $_REQUEST["telefone"]=='' or $_REQUEST["endereco"]==''){
 				echo "Por favor complete todos os campos";
@@ -35,6 +31,22 @@
 			}
 		}
 		public function adicionarVeterinario(){
+			$nome = $_REQUEST["nome"];
+			$usuario = $_REQUEST["usuario"];
+			$telefone = $_REQUEST["telefone"];
+			$cpf = $_REQUEST["cpf"];
+			$email = $_REQUEST["email"];
+			$id = $_REQUEST["id"];
+			$cod = $_REQUEST["codigo"];
+			$endereco= $_REQUEST["endereco"];
+			$_SESSION["nome"] = $nome;
+			$_SESSION["usuario"] = $usuario;
+			$_SESSION["telefone"] = $telefone;
+			$_SESSION["cpf"] = $cpf;
+			$_SESSION["email"] = $email;
+			$_SESSION["id"] = $id;
+			$_SESSION["endereco"] = $endereco;
+			$_SESSION["codigo"] = $cod;
 			if($_REQUEST["nome"]=='' or $_REQUEST["usuario"]== '' or $_REQUEST["email"]== '' 
 			or $_REQUEST["senha"]=='' or $_REQUEST["cpf"]=='' or $_REQUEST["telefone"]=='' or $_REQUEST["endereco"]=='' or $_REQUEST["id"]=='' or $_REQUEST["codigo"]==''){
 				echo "Por favor complete todos os campos";
@@ -53,6 +65,7 @@
 		public function adicionarPet(){
 			
 		}
+		
 		
 	}
 	

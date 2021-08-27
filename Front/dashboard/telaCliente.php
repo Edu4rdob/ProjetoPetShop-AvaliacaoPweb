@@ -1,3 +1,7 @@
+<?php
+	require_once '../../Back/MostrarCliente.php';
+	$mostrar = new MostraCliente();
+?>
 <!doctype html>
 <html lang="en">
   <head>
