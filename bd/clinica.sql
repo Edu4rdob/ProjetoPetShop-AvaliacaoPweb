@@ -24,9 +24,4 @@ constraint animalPK primary key(nome, cpf),
 constraint cpfFK foreign key(cpf) references cliente(cpf)
 
 );
-select * from cliente;
-select * from veterinario;
-select email from cliente where email= 'marina@gmail.com';
-delete from cliente where cpf = '1098763';
 
-update cliente set telefone='12343' where usuario='ttt';
