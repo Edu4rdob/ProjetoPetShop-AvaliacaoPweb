@@ -14,7 +14,7 @@
     <title>Cover Template for Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="home.css" rel="stylesheet">
@@ -50,8 +50,8 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <img src="images/ico-petshop-e9940-thumbnail.png" style="width:180px" alt="" srcset="">
-              <form style="color: black;" action="../../Back/teste.php" method="POST">
+              <img src="../../static/imagens/ico-petshop-e9940-thumbnail.png" style="width:180px" alt="" srcset="">
+              <form style="color: black;" action="../../../controller/teste.php" method="POST">
                 <div class="mb-3">
                   <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Email address" style="margin-top: 30px; background-color: gainsboro; border-radius: 20px;">
                 </div>

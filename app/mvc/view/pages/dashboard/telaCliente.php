@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require_once '../../Back/MostraCliente.php';
+	require_once '../../../controller/MostraCliente.php';
 
 ?>
 <!doctype html>
@@ -15,10 +15,10 @@
     <title>Cliente</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="../../assets/css/dashboard.css" rel="stylesheet">
   </head>
 
   <body>

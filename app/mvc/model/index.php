@@ -1,7 +1,7 @@
 
 <?php
 	session_start();
-	require_once 'mostrarVet.php';
+	require_once '../controller/mostrarVet.php';
 	$mostrar = new mostrarVet($_SESSION["email"]);
 
 ?>

@@ -45,7 +45,7 @@ session_start();
                 <img src="imagens/1b82a5_503c2f4782ee416b8d65b75b3b9bea42_mv2.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="imagens/caoideal2-1.png"  style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
+                <img src="../../static/imagens/caoideal2-1.png"  style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="imagens/gato-gato-fofo-gato-filhote-1585841507191_v2_450x337.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
@@ -63,7 +63,7 @@ session_start();
         </div>
         <div class="col-md-8 order-md-1 mb-3">
           <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate action="../../Back/registrarCliente.php" method="POST">
+          <form class="needs-validation" novalidate action="../../../controller/registrarCliente.php" method="POST">
             <div class="row">
               <div class="col-md-6 fullName">
                 <label for="firstName">Full name</label>
