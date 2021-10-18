@@ -27,7 +27,8 @@
 					
 					foreach($result as $value){
 						if($value['email'] == $email && $value['senha'] ==$senhaCrip){
-							header("Location: ../Front/dashboard/telaCliente.php");
+							//header("Location: ../Front/dashboard/telaCliente.php");
+							header("Location: ../view/pages/dashboard/telaCliente.php");
 							//require_once '../Front/dashboard/telaCliente.php';
 						}else{
 							echo 'Digite as informações corretas';
@@ -38,6 +39,7 @@
 							$email = $_REQUEST["email"];
 							$_SESSION["email"] = $email;
 							header("Location: ../Front/dashboard/telaVet.php");
+							header("Location: ../view/pages/dashboard/telaCliente.php");
 							//header("Location: index.php");
 						}else{
 							echo 'Digite as informações corretas';

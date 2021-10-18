@@ -1,7 +1,7 @@
 <?php
-	require_once 'Cliente.php';
-	require_once 'Veterinario.php';
-	require_once 'Pet.php';
+	require_once '../model/Cliente.php';
+	require_once '../model/Veterinario.php';
+	require_once '../model/Pet.php';
 	
 	Class Conexao{
 		
