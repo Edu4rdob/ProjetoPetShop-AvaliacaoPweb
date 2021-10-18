@@ -17,7 +17,7 @@
     <link href="../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="home.css" rel="stylesheet">
+    <link href="../../assets/css/home.css" rel="stylesheet">
   </head>
 
   <body class="text-center">

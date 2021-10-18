@@ -8,22 +8,22 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/Front/checkout/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg">
+    <link rel="icon" href="../../static/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg">
 
     <title>Checkout example for Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
+    <link href="../../assets/css/form-validation.css" rel="stylesheet">
   </head>
 
   <body class="bg">
 
     <div class="container">
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
+        <img class="d-block mx-auto mb-4" src="../../static/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
         <h2>Registre-se</h2>
         <p class="lead">Aqui temos os melhores veterinarios e tratamento que o seu pet poderá encontrar.</p>
       </div>
@@ -42,13 +42,13 @@ session_start();
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="imagens/1b82a5_503c2f4782ee416b8d65b75b3b9bea42_mv2.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
+                <img src="../../static/imagens/1b82a5_503c2f4782ee416b8d65b75b3b9bea42_mv2.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="../../static/imagens/caoideal2-1.png"  style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="imagens/gato-gato-fofo-gato-filhote-1585841507191_v2_450x337.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
+                <img src="../../static/imagens/gato-gato-fofo-gato-filhote-1585841507191_v2_450x337.jpg" style="height: 300px; width: 600px;" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -151,7 +151,7 @@ session_start();
               </div>
             </div>
             <hr class="mb-4">
-            <a href="../cover/home.css">
+            <a href="../../assets/css/home.css">
               <input class="btn btn-primary btn-lg btn-block" type="submit" value='Registre-se'>
             </a>
           </form>

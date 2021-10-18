@@ -8,27 +8,27 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/Front/checkout/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg">
+    <link rel="icon" href="../../static/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg">
 
     <title>Checkout example for Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
+    <link href="../../assets/css/form-validation.css" rel="stylesheet">
   </head>
 
   <body class="bg">
 
     <div class="container">
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
+        <img class="d-block mx-auto mb-4" src="../../static/imagens/360_F_402161358_LxtAMGUicBPdLkZOICowd2lFJm8iSZ6d.jpg" alt="" width="300">
         <h2>Registre-se como veterinario</h2>
       </div>
         <div class="col-md-8 order-md-1 mb-3">
           <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate action="../../Back/registrarVeterinario.php" method="POST">
+          <form class="needs-validation" novalidate action="../../../controller/registrarVeterinario.php" method="POST">
             <div class="row">
               <div class="col-md-6 fullName">
                 <label for="firstName">Full name</label>
@@ -134,7 +134,7 @@ session_start();
              </div>
             </div>
             <hr class="mb-4">
-            <a href="../cover/home.css">
+            <a href="../../assets/css/home.css">
               <input class="btn btn-primary btn-lg btn-block" type="submit" value='Registre-se'>
             </a>
           </form>
