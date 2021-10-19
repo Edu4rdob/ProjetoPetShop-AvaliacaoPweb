@@ -28,7 +28,7 @@ session_start();
       </div>
         <div class="col-md-8 order-md-1 mb-3">
           <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate action="../../../controller/registrarVeterinario.php" method="POST">
+          <form class="needs-validation" id='cadVet' novalidate action="" method="POST">
             <div class="row">
               <div class="col-md-6 fullName">
                 <label for="firstName">Full name</label>
@@ -135,7 +135,7 @@ session_start();
             </div>
             <hr class="mb-4">
             <a href="../../assets/css/home.css">
-              <input class="btn btn-primary btn-lg btn-block" type="submit" value='Registre-se'>
+              <input class="btn btn-primary btn-lg btn-block" id='salvar' type="submit" value='Registre-se'>
             </a>
           </form>
         </div>
@@ -153,7 +153,10 @@ session_start();
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous">
+        </script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
@@ -181,5 +184,26 @@ session_start();
         }, false);
       })();
     </script>
+    <script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+        /// Quando usuário clicar em salvar será feito todos os passo abaixo
+        $('#salvar').click(function() {
+
+            var dados = $('#cadVet').serialize();
+          $.ajax({
+                    type: 'POST',
+                    dataType: 'json',
+                    url: '../../../controller/registrarVeterinario.php',
+                    async: true,
+                    data: dados,
+                    success: function(response) {
+                        location.reload();
+                    }
+            });
+
+            return false;
+        });
+    });
+</script>
   </body>
 </html>

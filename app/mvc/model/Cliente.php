@@ -44,7 +44,7 @@
 		public function setEmail($valor){
 			$this->email = $valor;
 		}
-		public function setCpf($cpf){
+		public function setCpf($valor){
 			$this->cpf = $valor;
 		}
 		public function setSenha($valor){
