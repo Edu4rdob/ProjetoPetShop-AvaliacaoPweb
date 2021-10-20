@@ -38,8 +38,8 @@
 						if($value2['email'] == $email && $value2['senha'] ==$senhaCrip){
 							$email = $_REQUEST["email"];
 							$_SESSION["email"] = $email;
-							header("Location: ../Front/dashboard/telaVet.php");
-							header("Location: ../view/pages/dashboard/telaCliente.php");
+							//header("Location: ../Front/dashboard/telaVet.php");
+							header("Location: ../view/pages/dashboard/telaVet.php");
 							//header("Location: index.php");
 						}else{
 							echo 'Digite as informações corretas';
