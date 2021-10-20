@@ -13,16 +13,18 @@
 					
 					$stmt = $conn->prepare($sql);
 					$stmt->execute();		
-					$result = $stmt->fetchAll();
+					echo 'foi';
+           			return json_encode($stmt->fetchAll(PDO::FETCH_ASSOC));
 					
-					foreach($result as $value){
+
+					/*foreach($result as $value){
 						if($value['email'] == $email){
 							echo '<h6>Nome: ', $value['nome'],'</h6><br>','<h6>User: ',$value['usuario'],'</h6><br>',
 							'<h6>Email: ',$value['email'],'</h6>';
 						}
 					}
 
-				}catch(PDOException $e) {
+				*/	}catch(PDOException $e) {
 					echo 'ERROR: ' . $e->getMessage();
 				}
 	}

@@ -196,9 +196,7 @@ session_start();
                     url: '../../../controller/registrarVeterinario.php',
                     async: true,
                     data: dados,
-                    success: function(response) {
-                        location.reload();
-                    }
+                    success: window.location.replace('../cover/home.php'),
             });
 
             return false;

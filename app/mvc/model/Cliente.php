@@ -67,6 +67,10 @@
 			$controler = new Controller();
 			$controler->adicionarCliente();
 		}
+		public function JsonRetorno()
+    {
+        return json_encode(get_object_vars($this));
+    }
 	}
 	
 ?>

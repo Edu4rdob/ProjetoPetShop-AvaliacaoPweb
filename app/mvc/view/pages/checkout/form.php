@@ -213,10 +213,8 @@ session_start();
                     url: '../../../controller/registrarCliente.php',
                     async: true,
                     data: dados,
-                    
-            });
-            window.alert('foi')
-            
+                    success: window.location.replace('../cover/home.php'),   
+            });            
             return false;
         });
     });
