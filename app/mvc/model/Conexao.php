@@ -1,7 +1,7 @@
 <?php
-	require_once 'Cliente.php';
-	require_once 'Veterinario.php';
-	require_once 'Pet.php';
+	require_once '../model/Cliente.php';
+	require_once '../model/Veterinario.php';
+	require_once '../model/Pet.php';
 	
 	Class Conexao{
 		
@@ -21,13 +21,13 @@
 				$endereco = $cliente->getEndereco();
 				$senha = $cliente->getSenha();
 				$stmt = $conn->prepare('INSERT INTO CLIENTE VALUES(?,?,?,?,?,?,?)');
-				$stmt->bindParam(1,$nome, PDO::PARAM_INT);
-				$stmt->bindParam(2,$usu, PDO::PARAM_INT);
-				$stmt->bindParam(3,$email, PDO::PARAM_INT);
-				$stmt->bindParam(4,$cpf, PDO::PARAM_INT);
-				$stmt->bindParam(5,$telefone, PDO::PARAM_INT);
-				$stmt->bindParam(6,$endereco, PDO::PARAM_INT);
-				$stmt->bindParam(7,$senha, PDO::PARAM_INT);
+				$stmt->bindParam(1,$nome, PDO::PARAM_STR);
+				$stmt->bindParam(2,$usu, PDO::PARAM_STR);
+				$stmt->bindParam(3,$email, PDO::PARAM_STR);
+				$stmt->bindParam(4,$cpf, PDO::PARAM_STR);
+				$stmt->bindParam(5,$telefone, PDO::PARAM_STR);
+				$stmt->bindParam(6,$endereco, PDO::PARAM_STR);
+				$stmt->bindParam(7,$senha, PDO::PARAM_STR);
 				$stmt->execute();
 			} catch(PDOException $e) {
 				echo 'ERROR: ' . $e->getMessage();
@@ -51,15 +51,15 @@
 				$codigo = '50';
 				$senha = $vet->getSenha();
 				$stmt = $conn->prepare('INSERT INTO VETERINARIO VALUES(?,?,?,?,?,?,?,?,?)');
-				$stmt->bindParam(1,$nome, PDO::PARAM_INT);
-				$stmt->bindParam(2,$usu, PDO::PARAM_INT);
-				$stmt->bindParam(3,$email, PDO::PARAM_INT);
-				$stmt->bindParam(4,$cpf, PDO::PARAM_INT);
-				$stmt->bindParam(5,$telefone, PDO::PARAM_INT);
-				$stmt->bindParam(6,$id, PDO::PARAM_INT);
-				$stmt->bindParam(7,$codigo, PDO::PARAM_INT);
-				$stmt->bindParam(8,$endereco, PDO::PARAM_INT);
-				$stmt->bindParam(9,$senha, PDO::PARAM_INT);
+				$stmt->bindParam(1,$nome, PDO::PARAM_STR);
+				$stmt->bindParam(2,$usu, PDO::PARAM_STR);
+				$stmt->bindParam(3,$email, PDO::PARAM_STR);
+				$stmt->bindParam(4,$cpf, PDO::PARAM_STR);
+				$stmt->bindParam(5,$telefone, PDO::PARAM_STR);
+				$stmt->bindParam(6,$id, PDO::PARAM_STR);
+				$stmt->bindParam(7,$codigo, PDO::PARAM_STR);
+				$stmt->bindParam(8,$endereco, PDO::PARAM_STR);
+				$stmt->bindParam(9,$senha, PDO::PARAM_STR);
 				$stmt->execute();
 			} catch(PDOException $e) {
 				echo 'ERROR: ' . $e->getMessage();

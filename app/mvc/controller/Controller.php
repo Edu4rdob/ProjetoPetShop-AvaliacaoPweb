@@ -1,8 +1,8 @@
 <?php
 	
-	require_once 'Cliente.php';
-	require_once 'Veterinario.php';
-	require_once 'Conexao.php';
+	require_once '../model/Cliente.php';
+	require_once '../model/Veterinario.php';
+	require_once '../model/Conexao.php';
 	
 	Class Controller {
 	

@@ -1,5 +1,5 @@
 <?php
-	require_once 'Controller.php';
+	require_once '../controller/Controller.php';
 
 	class Cliente{
 		private $nome;
@@ -44,7 +44,7 @@
 		public function setEmail($valor){
 			$this->email = $valor;
 		}
-		public function setCpf($cpf){
+		public function setCpf($valor){
 			$this->cpf = $valor;
 		}
 		public function setSenha($valor){
@@ -67,6 +67,10 @@
 			$controler = new Controller();
 			$controler->adicionarCliente();
 		}
+		public function JsonRetorno()
+    {
+        return json_encode(get_object_vars($this));
+    }
 	}
 	
 ?>

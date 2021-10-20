@@ -1,4 +1,3 @@
-
 <?php
 	Class MostraCliente{
 		public function __construct($emailS){

@@ -1,8 +1,6 @@
-
 <?php
 	session_start();
-	require_once '../../Back/mostrarVet.php';
-	
+	require_once '../../../controller/MostraCliente.php';
 
 ?>
 <!doctype html>
@@ -14,13 +12,13 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Veterinario</title>
+    <title>Cliente</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="../../assets/css/dashboard.css" rel="stylesheet">
   </head>
 
   <body>
@@ -102,14 +100,14 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">Menu Veterinário</h1>
+            <h1 class="h2">Menu Cliente</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
             </div>
             
           </div>
-          <h4>Dados pessoais:</h4> 
-			<?php
-				$mostrar = new mostrarVet($_SESSION["email"]);
+          <h4>Dados pessoais:</h4>
+		  <?php
+				$mostrar = new MostraCliente($_SESSION["email"]);
 			?>
           <hr> </hr>
           <div class="table-responsive">
@@ -135,6 +133,5 @@
 
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-   
   </body>
 </html>
